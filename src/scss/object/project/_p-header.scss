@@ -1,0 +1,44 @@
+@use '../../global/' as g;
+
+/*-------------------------
+  ヘッダー
+-------------------------*/
+.p-header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: g.fz(25) g.fz(30);
+  background: red;
+}
+.p-header__right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.p-header__hamburger {
+  margin-left: g.fz(40);
+}
+.p-header-logo {
+  width: 100%;
+  max-width: 250px;
+}
+.p-header-btn {
+  font-size: g.fz(14);
+  font-weight: bold;
+  color: #fff;
+  padding: g.fz(14) g.fz(35);
+  text-transform: uppercase;
+  display: inline-block;
+  @include g.mq(md, max) {
+    display: none;
+  }
+}
+.p-header-btn + .p-header-btn {
+  margin-left: g.fz(22);
+}
+.p-header-btn--black {
+  background-color: g.$black-color;
+}
+.p-header-btn--accent {
+  background-color: g.$accent-color;
+}

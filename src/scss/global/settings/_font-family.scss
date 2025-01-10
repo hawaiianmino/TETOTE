@@ -1,15 +1,13 @@
-$font-family: "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
-
 ////////////////////
 // フォント設定
 ////////////////////
 
-$base-font-family: "";
-$second-font-family: "";
+$font-japanese: "Noto Sans JP", serif;;
+$font-english: "Viga", serif;
 // ※検証ツールでしっかり反映されているか確認する
 
 body {
-  font-family: $base-font-family;
+  font-family: $font-japanese;
 }
 
 // フォントウェイト
